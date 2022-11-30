@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Раздел &quot;О нас&quot;</name>
+		<description>Перечень тест-кейсов, направленных на тестирование раздела &quot;О нас&quot;.</description>
+						<cases>
+												<case>
+				<id>C1</id>
+				<title>Отправка сообщения через форму обратной связи &quot;Спросите нас о собачках&quot;</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>600</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Открыта главная страница сайта - https://qahacking.guru
+
+2. Открыта вкладка &quot;О нас&quot;</preconds>
+										<steps>1. Ввести в поле &quot;Full Name&quot; значение, состоящее из латинских букв и кириллицы.
+2. Ввести в поле &quot;E-mail&quot; корректный E-mail.
+3. Ввести в поле &quot;Mobile Phone&quot; значение , состоящее из цифр.
+4. Ввести в поле “Subject” значение , состоящее из латинских букв, кириллицы, спецсимволов и чисел.  
+5. Кликнуть на кнопку &quot;Отправить&quot;.</steps>
+										<expected>1. В поле &quot;Full Name&quot; отображается введенное значение.
+2. В поле &quot;E-mail&quot; отображается введенный E-mail.
+3. В поле &quot;Mobile Phone&quot; отображается введенное значение.
+4. В поле &quot;Subject&quot; отображается введенное значение.
+5. Система отображает уведомление об успешной отправке сообщения.
+
+</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>
